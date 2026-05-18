@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0d10;
+  --foreground: #e8ebf0;
+  --graphite-950: #0b0d10;
+  --graphite-900: #12161c;
+  --steel-100: #f3f5f8;
+  --steel-200: #d9dee7;
+  --steel-300: #b4becd;
+  --steel-400: #8d98aa;
+  --steel-500: #667386;
+  --steel-700: #3a4352;
+  --steel-800: #252c38;
+  --forge-300: #ffb27a;
+  --forge-400: #ff8f45;
+  --forge-500: #f97316;
+  --ops-300: #7cc4ff;
+  --ops-400: #4aa8ff;
+  --ops-500: #2b8fe8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-graphite-950: var(--graphite-950);
+  --color-graphite-900: var(--graphite-900);
+  --color-steel-100: var(--steel-100);
+  --color-steel-200: var(--steel-200);
+  --color-steel-300: var(--steel-300);
+  --color-steel-400: var(--steel-400);
+  --color-steel-500: var(--steel-500);
+  --color-steel-700: var(--steel-700);
+  --color-steel-800: var(--steel-800);
+  --color-forge-300: var(--forge-300);
+  --color-forge-400: var(--forge-400);
+  --color-forge-500: var(--forge-500);
+  --color-ops-300: var(--ops-300);
+  --color-ops-400: var(--ops-400);
+  --color-ops-500: var(--ops-500);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(249, 115, 22, 0.08), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(43, 143, 232, 0.08), transparent 24%),
+    linear-gradient(180deg, #0b0d10 0%, #0d1015 45%, #0b0d10 100%);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.pipeline-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.glass-panel {
+  background: rgba(18, 22, 28, 0.72);
+  border: 1px solid rgba(102, 115, 134, 0.28);
+  backdrop-filter: blur(12px);
+}
