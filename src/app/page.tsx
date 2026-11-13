@@ -31,11 +31,12 @@ const pricing = [
 
 export default function HomePage() {
   return (
-        <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
+    <>
+      <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
           <TrustStrip />
-        </div>
-        <MarketingGraphicsStack />
-    <div>
+      </div>
+      <MarketingGraphicsStack />
+      <div>
       <section className="pipeline-grid border-b border-steel-800/80">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
           <div>
@@ -172,6 +173,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
